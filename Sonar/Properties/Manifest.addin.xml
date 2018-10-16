@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-    <Runtime>
-    </Runtime>
+    <Extension path="/MonoDevelop/Ide/Commands">
+        <Command id="SonarRunner.SonarRunnerCommands.RunSonarCmd" _label="Scan with Sonnar" defaultHandler="SonarRunner.RunSonarHandler" />
+    </Extension>
+    <!--Build menu-->
+    <Extension path="/MonoDevelop/Ide/MainMenu/Build">
+        <CommandItem id="SonarRunner.SonarRunnerCommands.RunSonarCmd" />
+    </Extension>
 </ExtensionModel>
